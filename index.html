@@ -12,12 +12,9 @@
     --line: #e4e1da;
     --accent: #2f6fed;
     --accent-soft: #eef3fe;
-  }
-
+}
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
-
   body {
     margin: 0;
     background: var(--paper);
@@ -25,19 +22,16 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
-  }
-
-  .wrap {
+}
+.wrap {
     max-width: 700px;
     margin: 0 auto;
     padding: 56px 24px 96px;
-  }
-
+}
   header {
     margin-bottom: 40px;
-  }
-
-  .mark {
+}
+.mark {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -46,37 +40,31 @@
     border-radius: 10px;
     background: var(--accent-soft);
     margin-bottom: 18px;
-  }
-
-  .mark svg { width: 20px; height: 20px; }
-
+}
+.mark svg { width: 20px; height: 20px; }
   h1 {
     font-size: 1.7rem;
     font-weight: 700;
     margin: 0 0 6px;
     letter-spacing: -0.01em;
-  }
-
-  .updated {
+}
+.updated {
     color: var(--ink-soft);
     font-size: 0.9rem;
     margin: 0;
-  }
-
-  .lede {
+}
+.lede {
     margin-top: 22px;
     font-size: 1.02rem;
     color: var(--ink-soft);
-  }
-
+}
   nav.toc {
     margin: 32px 0 48px;
     padding: 18px 20px;
     background: #fff;
     border: 1px solid var(--line);
     border-radius: 12px;
-  }
-
+}
   nav.toc p {
     margin: 0 0 10px;
     font-size: 0.78rem;
@@ -84,88 +72,72 @@
     letter-spacing: 0.06em;
     color: var(--ink-soft);
     font-weight: 600;
-  }
-
+}
   nav.toc ol {
     margin: 0;
     padding-left: 1.1em;
     columns: 2;
     column-gap: 24px;
     font-size: 0.92rem;
-  }
-
+}
   nav.toc li { margin-bottom: 6px; break-inside: avoid; }
-
   nav.toc a {
     color: var(--ink);
     text-decoration: none;
-  }
-
+}
   nav.toc a:hover { color: var(--accent); }
-
   section { margin-bottom: 36px; scroll-margin-top: 24px; }
-
   h2 {
     font-size: 1.15rem;
     font-weight: 700;
     margin: 0 0 12px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--line);
-  }
-
+}
   h3 {
     font-size: 1rem;
     font-weight: 600;
     margin: 20px 0 8px;
-  }
-
+}
   p { margin: 0 0 14px; }
-
   ul { margin: 0 0 14px; padding-left: 1.2em; }
   li { margin-bottom: 6px; }
-
   a { color: var(--accent); }
-
-  .callout {
+.callout {
     background: var(--accent-soft);
     border-radius: 10px;
     padding: 16px 18px;
     font-size: 0.94rem;
     color: var(--ink-soft);
-  }
-
-  .contact {
+}
+.contact {
     background: #fff;
     border: 1px solid var(--line);
     border-radius: 12px;
     padding: 22px;
     text-align: center;
-  }
-
-  .contact a {
+}
+.contact a {
     font-size: 1.05rem;
     font-weight: 600;
     text-decoration: none;
-  }
-
+}
   footer {
     margin-top: 56px;
     padding-top: 20px;
     border-top: 1px solid var(--line);
     color: var(--ink-soft);
     font-size: 0.85rem;
-  }
-
+}
   @media (max-width: 480px) {
-    .wrap { padding: 40px 18px 72px; }
+.wrap { padding: 40px 18px 72px; }
     nav.toc ol { columns: 1; }
     h1 { font-size: 1.4rem; }
-  }
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-
   <header>
     <span class="mark" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="#2f6fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -175,7 +147,7 @@
     </span>
     <h1>Privacy Policy</h1>
     <p class="updated">Where's The Loo? · Last updated 20 July 2026</p>
-    <p class="lede">This page explains what information Where's The Loo? collects, how it's used, and the choices you have. The app is built and maintained by an independent solo developer — there's no company behind it, just one person trying to do right by the people using it.</p>
+    <p class="lede">This page explains what information Where's The Loo? collects, how it's used, and the choices you have. The app is built and maintained by an independent solo developer. There's no company behind it, just one person trying to do right by the people using it.</p>
   </header>
 
   <nav class="toc" aria-label="Table of contents">
@@ -204,10 +176,10 @@
     <h2>2. Information we collect</h2>
 
     <h3>2.1 Location data</h3>
-    <p>With your permission, the app uses your device's live location to show your position on the map and to find toilets near you. This is processed entirely on your device, it's used to search a toilet database stored locally in the app, and your live location is never transmitted to or stored on our servers. You can turn off location access at any time in your device's Settings, though features like "find nearest toilet" won't work without it.</p>
-    <p>This is separate from the map coordinates you choose yourself when suggesting a new toilet location, which <em>are</em> sent to our servers (see 2.4 below).</p>
+    <p>With your permission, the app uses your device's live location to show your position on the map and to find toilets near you. This is processed entirely on your device. It's used to search a toilet database stored locally in the app, and your live location is never transmitted to or stored on our servers. You can turn off location access at any time in your device's Settings, though features like "find nearest toilet" won't work without it.</p>
+    <p>This is separate from the map coordinates you choose yourself when suggesting a new toilet location, which <em>are</em> sent to our servers. See 2.4 below.</p>
     <p>The map itself is powered by Apple's MapKit, which may handle location data according to Apple's own privacy practices. We don't control or have access to this.</p>
-    
+
     <h3>2.2 Bookmarks</h3>
     <p>If you bookmark a toilet, it's saved only on your own device using Apple's local storage. Bookmarks are never sent to our servers and aren't visible to us.</p>
 
@@ -221,13 +193,13 @@
       <li>Your comments</li>
       <li>The ID of the toilet listing you're reporting, if you're reporting an existing toilet</li>
       <li>The map coordinates you selected, if you're suggesting a new toilet location</li>
-      <li>Your name and/or email address, only if you choose to provide them — these fields are always optional</li>
+      <li>Your name and/or email address, only if you choose to provide them. These fields are always optional</li>
       <li>A randomly generated, anonymous device identifier, used only to limit how many reports can be submitted from one device in a given period, to prevent spam. This isn't linked to your Apple ID, name, or any other personal information unless you separately provide your name or email</li>
     </ul>
-    <p>This information is sent securely to our database provider, and we receive an automated email notification so reports and suggestions can be reviewed. It's used only for reviewing your feedback and, where contact details are provided, responding to it. Suggested locations are manually reviewed before being added to the toilet database, nothing you submit is shown publicly or to other users of the app.</p>
-    
+    <p>This information is sent securely to our database provider, and we receive an automated email notification so reports and suggestions can be reviewed. It's used only for reviewing your feedback and, where contact details are provided, responding to it. Suggested locations are manually reviewed before being added to the toilet database. Nothing you submit is shown publicly or to other users of the app.</p>
+
     <h3>2.5 Star ratings</h3>
-    <p>If you rate a toilet using the star rating feature, we store the rating itself alongside the same anonymous device identifier described above. This is used to keep one rating per device per toilet — re-rating updates your existing rating rather than adding a new one — and to apply a basic rate limit that helps prevent automated abuse.</p>
+    <p>If you rate a toilet using the star rating feature, we store the rating itself alongside the same anonymous device identifier described above. This is used to keep one rating per device per toilet (re-rating updates your existing rating rather than adding a new one) and to apply a basic rate limit that helps prevent automated abuse.</p>
     <p>Individual ratings and device identifiers are never made publicly accessible. Only an aggregated average and total count per toilet are ever exposed, computed automatically and never tied back to any individual rating, device, or person. Your own rating is remembered locally on your device so the app can show your selection, rather than being retrieved from our servers.</p>
   </section>
 
@@ -242,9 +214,9 @@
     <h2>4. How we share information</h2>
     <p>We don't sell, rent, or share your personal information with third parties for marketing or advertising. We use the following service providers to operate the app:</p>
     <ul>
-      <li><strong>Apple</strong> — provides mapping, location services, and the App Store platform</li>
-      <li><strong>Supabase, Inc.</strong> — securely stores feedback and report submissions</li>
-      <li><strong>Resend</strong> — used internally to send the developer an email notification when a new report is submitted</li>
+      <li><strong>Apple</strong>, which provides mapping, location services, and the App Store platform</li>
+      <li><strong>Supabase, Inc.</strong>, which securely stores feedback and report submissions</li>
+      <li><strong>Resend</strong>, used internally to send the developer an email notification when a new report is submitted</li>
     </ul>
     <p>Each provider processes data only as necessary to provide their service to us, and is bound by their own privacy and security practices.</p>
   </section>
@@ -261,7 +233,7 @@
 
   <section id="rights">
     <h2>7. Your rights</h2>
-    <p>Depending on where you live, you may have rights under data protection law — such as the UK GDPR or EU GDPR — including the right to:</p>
+    <p>Depending on where you live, you may have rights under data protection law, such as the UK GDPR or EU GDPR, including the right to:</p>
     <ul>
       <li>Access the personal data we hold about you</li>
       <li>Correct inaccurate data</li>
@@ -297,7 +269,6 @@
   <footer>
     Where's The Loo? is an independent app, not affiliated with the Great British Public Toilet Map, Apple, or any other organisation named above.
   </footer>
-
 </div>
 </body>
 </html>
