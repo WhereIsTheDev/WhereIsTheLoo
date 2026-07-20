@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Where's The Loo?</title>
+<style>
+  :root {
+    --ink: #1a1d23;
+    --ink-soft: #4a5160;
+    --paper: #fbfaf8;
+    --line: #e4e1da;
+    --accent: #2f6fed;
+    --accent-soft: #eef3fe;
+}
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+.wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+}
+  header {
+    margin-bottom: 40px;
+}
+.mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    margin-bottom: 18px;
+}
+.mark svg { width: 20px; height: 20px; }
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+}
+.lede {
+    margin-top: 22px;
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+}
+  nav.toc {
+    margin: 32px 0 48px;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+  nav.toc p {
+    margin: 0 0 10px;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    font-weight: 600;
+}
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.1em;
+    columns: 2;
+    column-gap: 24px;
+    font-size: 0.92rem;
+}
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+}
+  nav.toc a:hover { color: var(--accent); }
+  section { margin-bottom: 36px; scroll-margin-top: 24px; }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+}
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.2em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+.contact {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+}
+.contact a {
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+}
+  @media (max-width: 480px) {
+.wrap { padding: 40px 18px 72px; }
+    nav.toc ol { columns: 1; }
+    h1 { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2f6fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21c-4-4-7-7.5-7-11a7 7 0 0 1 14 0c0 3.5-3 7-7 11z"/>
+        <circle cx="12" cy="10" r="2.5"/>
+      </svg>
+    </span>
+    <h1>Support</h1>
+    <p class="lede">Questions about Where's The Loo? Here are the common ones. If yours isn't covered, get in touch and we'll help directly.</p>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#general">General questions</a></li>
+      <li><a href="#data">The toilet data</a></li>
+      <li><a href="#reporting">Reporting and suggestions</a></li>
+      <li><a href="#settings">Settings and navigation</a></li>
+      <li><a href="#contact">Still need help</a></li>
+    </ol>
+  </nav>
+
+  <section id="general">
+    <h2>General questions</h2>
+    <h3>Is the app free?</h3>
+    <p>Yes, completely free, no ads, no in app purchases, no subscription. If you'd like to support development, there's an optional link to Ko-fi in the app's "From the Dev" page, entirely voluntary.</p>
+    <h3>Do I need to create an account?</h3>
+    <p>No. The app works fully without signing in or creating any account.</p>
+  </section>
+
+  <section id="data">
+    <h2>The toilet data</h2>
+    <h3>Where does the toilet information come from?</h3>
+    <p>The core dataset comes from the <a href="https://www.toiletmap.org.uk" target="_blank" rel="noopener">Great British Public Toilet Map (GBPTM)</a>, an open, community maintained resource, supplemented with additional research and corrections.</p>
+    <h3>Why isn't a toilet near me listed?</h3>
+    <p>Coverage depends on what's been recorded in the source data. If you know of a public toilet that's missing, you can suggest it directly in the app, see below.</p>
+  </section>
+
+  <section id="reporting">
+    <h2>Reporting and suggestions</h2>
+    <h3>How do I suggest a new toilet location?</h3>
+    <p>Long press anywhere on the map where you know a public toilet exists. A pin will drop, and tapping it opens a short form to send us the details.</p>
+    <h3>How do I report incorrect information?</h3>
+    <p>Open the toilet's card and use the report option to flag anything that's wrong, out of date, or missing.</p>
+    <h3>What happens after I submit something?</h3>
+    <p>Every report and suggestion is reviewed manually before anything changes in the app. Nothing you submit is shown publicly or to other users.</p>
+  </section>
+
+  <section id="settings">
+    <h2>Settings and navigation</h2>
+    <h3>Can I choose which maps app opens for directions?</h3>
+    <p>Yes. In Settings, choose between Apple Maps, Google Maps, Waze, or Citymapper as your default for the Navigate button.</p>
+    <h3>Can I change how toilets are displayed on the map?</h3>
+    <p>Yes. Settings includes options for pin size, high contrast pins, distance units, and haptic feedback.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Still need help</h2>
+    <div class="contact">
+      <p style="margin-bottom: 6px; color: var(--ink-soft); font-size: 0.9rem;">Get in touch and we'll get back to you.</p>
+      <a href="mailto:whereisthedeveloper@gmail.com">whereisthedeveloper@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    Where's The Loo? is an independent app, not affiliated with the Great British Public Toilet Map, Apple, or any other organisation named above.
+  </footer>
+</div>
+</body>
+</html>
